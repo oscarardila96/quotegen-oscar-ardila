@@ -17,10 +17,9 @@ function App() {
 
   document.body.style = `background: ${colors[newColor]} `
 
-
   return (
     <div className="App">
-      <QuoteBox index={index} />
+      <QuoteBox index={index} colors={colors} newColor={newColor} />
       <Button nextQuote={nextQuote} colors={colors} newColor={newColor} />
     </div>
   )

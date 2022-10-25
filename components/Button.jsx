@@ -2,7 +2,7 @@ import React from 'react';
 
 const Button = ({ nextQuote, colors, newColor }) => {
   return (
-    <button onClick={nextQuote} className='btn' style={{ background: colors[newColor] }}>{<i className="fa-solid fa-shuffle"></i>}{" "}Next Quote</button>
+    <button onClick={nextQuote} style={{ backgroundColor: colors[newColor] }} className='btn'>{<i className="fa-solid fa-shuffle"></i>}{" "}Next Quote</button>
   );
 };
 

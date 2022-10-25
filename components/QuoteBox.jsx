@@ -1,10 +1,10 @@
 import React from 'react';
 import quotes from '../src/assets/quotes.json'
 
-const QuoteBox = ({ index }) => {
+const QuoteBox = ({ index, colors, newColor }) => {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ color: colors[newColor] }}>
         <div className="quoteContainer">
           <i className="fa-solid fa-quote-left"></i>
           <h2>{quotes[index].quote}</h2>
